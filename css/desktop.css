@@ -1,0 +1,430 @@
+/* Prumysl — desktop layout & polish (min-width breakpoints only) */
+
+@media (min-width: 1024px) {
+    html {
+        scroll-padding-top: 96px;
+    }
+
+    .container {
+        max-width: 1280px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .top-bar {
+        font-size: 0.95rem;
+        padding: 11px 0;
+    }
+
+    header {
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.06);
+    }
+
+    .header-inner {
+        max-width: 1280px;
+        padding: 14px 32px;
+    }
+
+    .logo-container {
+        max-width: 160px;
+    }
+
+    .contact-quick-row {
+        padding: 0 32px 14px;
+        background: #fff;
+    }
+
+    .contact-quick-inner {
+        max-width: 1280px;
+        margin: 0 auto;
+        grid-template-columns: auto auto;
+        justify-content: flex-end;
+        gap: 14px;
+        width: 100%;
+    }
+
+    .contact-quick-btn {
+        min-width: 220px;
+        padding: 12px 22px;
+        font-size: 0.95rem;
+    }
+
+    .whatsapp-float {
+        width: 62px;
+        height: 62px;
+        left: 28px;
+        bottom: 28px;
+    }
+
+    .whatsapp-float img {
+        width: 62px;
+        height: 62px;
+    }
+}
+
+/* —— Homepage —— */
+@media (min-width: 1024px) {
+    .homepage-page .hub-hero {
+        padding: 52px 0 36px;
+    }
+
+    .homepage-page .hub-hero h1 {
+        font-size: 2.15rem;
+        max-width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .homepage-page .hub-hero p {
+        font-size: 1.12rem;
+        max-width: 720px;
+    }
+
+    .homepage-page .trust-strip {
+        gap: 24px;
+        margin-top: 28px;
+    }
+
+    .homepage-page .trust-block__media img {
+        height: 88px;
+    }
+
+    .homepage-page .choice-section {
+        padding: 48px 0 64px;
+    }
+
+    .homepage-page .choice-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 26px;
+    }
+
+    .homepage-page .choice-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .homepage-page .hub-video-section {
+        padding: 40px 0 56px;
+    }
+
+    .homepage-page .video-embed-wrap {
+        max-width: 960px;
+        border-radius: 20px;
+    }
+
+    .homepage-page .compare-note {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px 28px;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .homepage-page .choice-grid {
+        gap: 28px;
+    }
+
+    .homepage-page .choice-title {
+        font-size: 1.32rem;
+    }
+}
+
+/* —— Moka lineup (2 cards) —— */
+@media (min-width: 1024px) {
+    .moka-lineup-page .hub-hero,
+    .moka-lineup-page .lineup-hero {
+        padding: 48px 0 32px;
+    }
+
+    .moka-lineup-page .choice-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 920px;
+        margin: 0 auto;
+        gap: 28px;
+    }
+
+    .moka-lineup-page .choice-card {
+        min-height: 100%;
+    }
+}
+
+/* —— Product pages: hero + sticky order —— */
+@media (min-width: 1100px) {
+    .moka-page main#main-content],
+    .moka-pro-max-page main#main-content],
+    .assas-page main#main-content],
+    .garde-corps-page main#main-content],
+    .saqr-page main#main-content] {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(400px, 440px);
+        column-gap: 44px;
+        row-gap: 0;
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 20px 32px 0;
+        align-items: start;
+    }
+
+    .moka-page .hero-section,
+    .moka-pro-max-page .hero-section,
+    .assas-page .hero-section,
+    .garde-corps-page .hero-section,
+    .saqr-page .hero-section {
+        grid-column: 1;
+        grid-row: 1;
+        padding-top: 8px;
+        text-align: center;
+    }
+
+    .moka-page .hero-section img,
+    .moka-pro-max-page .hero-section img,
+    .assas-page .hero-section img,
+    .garde-corps-page .hero-section img,
+    .saqr-page .hero-section img {
+        max-width: 100%;
+        border-radius: 24px;
+        box-shadow: 0 24px 56px rgba(32, 40, 149, 0.14);
+    }
+
+    .moka-page .order-section,
+    .moka-pro-max-page .order-section,
+    .assas-page .order-section,
+    .garde-corps-page .order-section,
+    .saqr-page .order-section {
+        grid-column: 2;
+        grid-row: 1;
+        align-self: start;
+        position: sticky;
+        top: 92px;
+        z-index: 40;
+        padding: 0 0 40px;
+        background: transparent;
+    }
+
+    .moka-page .order-section .container,
+    .moka-pro-max-page .order-section .container,
+    .assas-page .order-section .container,
+    .garde-corps-page .order-section .container,
+    .saqr-page .order-section .container {
+        max-width: none;
+        padding: 0;
+    }
+
+    .moka-page .order-title,
+    .moka-pro-max-page .order-title,
+    .assas-page .order-title,
+    .garde-corps-page .order-title,
+    .saqr-page .order-title {
+        font-size: 1.42rem;
+        margin-bottom: 8px;
+    }
+
+    .moka-page .order-title .seo-h1-product,
+    .moka-pro-max-page .order-title .seo-h1-product,
+    .assas-page .order-title .seo-h1-product,
+    .garde-corps-page .order-title .seo-h1-product,
+    .saqr-page .order-title .seo-h1-product {
+        font-size: 0.98rem;
+        margin-bottom: 10px;
+    }
+
+    .moka-page .order-subtitle,
+    .moka-pro-max-page .order-subtitle,
+    .assas-page .order-subtitle,
+    .garde-corps-page .order-subtitle,
+    .saqr-page .order-subtitle {
+        font-size: 0.92rem;
+        margin-bottom: 16px;
+    }
+
+    .moka-page .order-form,
+    .moka-pro-max-page .order-form,
+    .assas-page .order-form,
+    .garde-corps-page .order-form,
+    .saqr-page .order-form {
+        padding: 26px 24px;
+        border-radius: 22px;
+        box-shadow: 0 22px 50px rgba(32, 40, 149, 0.12);
+        border: 1px solid rgba(32, 40, 149, 0.08);
+    }
+
+    .moka-page .features-section,
+    .moka-page .reviews-section,
+    .moka-page .gallery-section,
+    .moka-page .faq-section,
+    .moka-pro-max-page .features-section,
+    .moka-pro-max-page .reviews-section,
+    .moka-pro-max-page .gallery-section,
+    .moka-pro-max-page .faq-section,
+    .assas-page .features-section,
+    .assas-page .reviews-section,
+    .assas-page .gallery-section,
+    .assas-page .video-section,
+    .assas-page .faq-section,
+    .garde-corps-page .features-section,
+    .garde-corps-page .reviews-section,
+    .garde-corps-page .gallery-section,
+    .garde-corps-page .video-section,
+    .garde-corps-page .faq-section,
+    .saqr-page .features-section,
+    .saqr-page .reviews-section,
+    .saqr-page .gallery-section,
+    .saqr-page .video-section,
+    .saqr-page .faq-section {
+        grid-column: 1 / -1;
+    }
+
+    .moka-page .retarget-section,
+    .moka-pro-max-page .retarget-section,
+    .assas-page .retarget-section,
+    .garde-corps-page .retarget-section,
+    .saqr-page .retarget-section {
+        display: none;
+    }
+
+    .moka-page .mobile-cta,
+    .moka-pro-max-page .mobile-cta,
+    .assas-page .mobile-cta,
+    .garde-corps-page .mobile-cta,
+    .saqr-page .mobile-cta {
+        display: none !important;
+    }
+
+    .moka-page .features-section,
+    .moka-pro-max-page .features-section,
+    .assas-page .features-section,
+    .garde-corps-page .features-section,
+    .saqr-page .features-section {
+        padding: 72px 0;
+    }
+
+    .moka-page .features-grid,
+    .moka-pro-max-page .features-grid,
+    .assas-page .features-grid,
+    .garde-corps-page .features-grid,
+    .saqr-page .features-grid {
+        gap: 28px;
+    }
+
+    .moka-page .feature-box h3,
+    .moka-pro-max-page .feature-box h3,
+    .assas-page .feature-box h3,
+    .garde-corps-page .feature-box h3,
+    .saqr-page .feature-box h3 {
+        font-size: 1.15rem;
+    }
+
+    .moka-page .reviews-wrapper,
+    .moka-pro-max-page .reviews-wrapper,
+    .assas-page .reviews-wrapper,
+    .garde-corps-page .reviews-wrapper,
+    .saqr-page .reviews-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .moka-page .gallery-grid,
+    .moka-pro-max-page .gallery-grid,
+    .assas-page .gallery-grid,
+    .garde-corps-page .gallery-grid,
+    .saqr-page .gallery-grid {
+        gap: 24px;
+    }
+
+    .moka-page .section-divider h2,
+    .moka-pro-max-page .section-divider h2,
+    .assas-page .section-divider h2,
+    .garde-corps-page .section-divider h2,
+    .saqr-page .section-divider h2 {
+        font-size: 1.65rem;
+    }
+
+    .moka-page .specs-table-wrap,
+    .moka-pro-max-page .specs-table-wrap,
+    .assas-page .specs-table-wrap,
+    .garde-corps-page .specs-table-wrap,
+    .saqr-page .specs-table-wrap {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1100px) {
+  .moka-page .order-form,
+  .moka-pro-max-page .order-form,
+  .assas-page .order-form,
+  .garde-corps-page .order-form,
+  .saqr-page .order-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 14px;
+  }
+
+  .moka-page .order-form > .form-group:nth-of-type(1),
+  .moka-pro-max-page .order-form > .form-group:nth-of-type(1),
+  .assas-page .order-form > .form-group:nth-of-type(1),
+  .garde-corps-page .order-form > .form-group:nth-of-type(1),
+  .saqr-page .order-form > .form-group:nth-of-type(1) {
+    grid-column: 1;
+  }
+
+  .moka-page .order-form > .form-group:nth-of-type(2),
+  .moka-pro-max-page .order-form > .form-group:nth-of-type(2),
+  .assas-page .order-form > .form-group:nth-of-type(2),
+  .garde-corps-page .order-form > .form-group:nth-of-type(2),
+  .saqr-page .order-form > .form-group:nth-of-type(2) {
+    grid-column: 2;
+  }
+
+  .moka-page .order-form > .form-group:nth-of-type(3),
+  .moka-pro-max-page .order-form > .form-group:nth-of-type(3),
+  .assas-page .order-form > .form-group:nth-of-type(3),
+  .garde-corps-page .order-form > .form-group:nth-of-type(3),
+  .saqr-page .order-form > .form-group:nth-of-type(3),
+  .moka-page .order-form > .submit-btn,
+  .moka-pro-max-page .order-form > .submit-btn,
+  .assas-page .order-form > .submit-btn,
+  .garde-corps-page .order-form > .submit-btn,
+  .saqr-page .order-form > .submit-btn,
+  .moka-page .order-form > .reassure,
+  .moka-pro-max-page .order-form > .reassure,
+  .assas-page .order-form > .reassure,
+  .garde-corps-page .order-form > .reassure,
+  .saqr-page .order-form > .reassure {
+    grid-column: 1 / -1;
+  }
+}
+
+/* —— Thank-you —— */
+@media (min-width: 1024px) {
+    .thank-you-page .thank-wrap {
+        padding: 56px 0 72px;
+    }
+
+    .thank-you-page .thank-wrap .container {
+        max-width: 640px;
+    }
+
+    .thank-you-page .summary-card {
+        padding: 28px 32px;
+        border-radius: 22px;
+    }
+
+    .thank-you-page .btn-row {
+        max-width: 480px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .thank-you-page .btn-prm {
+        flex: 1 1 calc(50% - 6px);
+        min-width: 200px;
+    }
+
+    .thank-you-page .btn-prm--ghost {
+        flex: 1 1 100%;
+    }
+}

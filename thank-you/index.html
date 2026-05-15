@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شكراً على طلبك | Prumysl</title>
+    <meta name="description" content="تم استلام طلبك. سيتصل بك فريق Prumysl لتأكيد الطلب والتوصيل — الدفع عند الاستلام وتوصيل مجاني في المغرب.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="Prumysl">
+    <meta name="theme-color" content="#202895">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/desktop.css">
+    <script src="/js/prumysl-meta-pixel-head.js"></script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=740114099139411&ev=PageView&noscript=1"
+    /></noscript>
+
+    <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+    var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+    ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+      ttq.load('D81OHIBC77UDUGTVF380');
+      ttq.ready(function () { ttq.page(); });
+    }(window, document, 'ttq');
+    </script>
+
+    <style>
+        :root {
+            --primary-black: #000000;
+            --primary-white: #FFFFFF;
+            --accent-blue: #202895;
+            --success-green: #28a745;
+            --bg-light: #F8F9FA;
+            --text-gray: #555555;
+            --soft-blue: #f4f5ff;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Cairo', sans-serif; }
+        body { background: var(--bg-light); color: var(--primary-black); line-height: 1.45; }
+        .container { max-width: 700px; margin: 0 auto; padding: 0 15px; }
+
+        .top-bar {
+            background-color: var(--accent-blue);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9rem;
+            font-weight: 800;
+        }
+        .top-bar .pulse-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #00e676;
+            border-radius: 50%;
+            margin: 0 6px;
+            vertical-align: middle;
+            animation: dotPulse 1.3s infinite;
+        }
+        @keyframes dotPulse {
+            0% { box-shadow: 0 0 0 0 rgba(0,230,118,0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(0,230,118,0); }
+            100% { box-shadow: 0 0 0 0 rgba(0,230,118,0); }
+        }
+
+        header {
+            background: var(--primary-white);
+            border-bottom: 1px solid #eee;
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+            display: flex;
+            justify-content: center;
+        }
+        .logo-container { max-width: 140px; }
+        .logo-container img { width: 100%; height: auto; display: block; }
+
+        .contact-quick-row { background: #fff; border-bottom: 1px solid #eee; padding: 12px 15px; }
+        .contact-quick-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .contact-quick-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: clamp(0.78rem, 2.5vw, 0.95rem);
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            transition: filter 0.12s ease, transform 0.12s ease;
+        }
+        .contact-quick-btn:hover { filter: brightness(1.06); }
+        .contact-quick-btn:active { transform: scale(0.98); }
+        .contact-quick-btn--call { background: #25D366; box-shadow: 0 3px 0 #1da851; }
+        .contact-quick-btn--wa { background: #202895; box-shadow: 0 3px 0 #151a5e; }
+
+        .thank-wrap {
+            padding: 40px 0 56px;
+            text-align: center;
+        }
+        .thank-icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto 18px;
+            background: linear-gradient(135deg, #e8f9ec, #c8efd4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            border: 2px solid rgba(40,167,69,0.35);
+        }
+        .thank-wrap h1 {
+            font-size: clamp(1.45rem, 4.2vw, 1.95rem);
+            font-weight: 900;
+            color: #111;
+            margin-bottom: 10px;
+        }
+        .thank-lead {
+            font-size: clamp(0.95rem, 2.8vw, 1.05rem);
+            font-weight: 700;
+            color: #444;
+            margin-bottom: 22px;
+            line-height: 1.65;
+        }
+        .thank-lead b { color: var(--accent-blue); }
+
+        .summary-card {
+            background: var(--primary-white);
+            border: 2px solid #e8eaf5;
+            border-radius: 18px;
+            padding: 22px 20px;
+            text-align: right;
+            box-shadow: 0 10px 28px rgba(0,0,0,0.05);
+            margin-bottom: 22px;
+        }
+        .summary-card h2 {
+            font-size: 1rem;
+            font-weight: 900;
+            color: var(--accent-blue);
+            margin-bottom: 14px;
+            text-align: center;
+        }
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95rem;
+            font-weight: 700;
+            flex-wrap: wrap;
+        }
+        .summary-row:last-child { border-bottom: none; }
+        .summary-row--product .summary-value { font-size: 1.02rem; line-height: 1.5; }
+        .summary-row--price { border-bottom: none; padding-bottom: 4px; }
+        .summary-value--price { color: var(--accent-blue); font-size: 1.15rem; }
+        .summary-divider {
+            border: none;
+            border-top: 1px dashed rgba(32,40,149,0.2);
+            margin: 8px 0 4px;
+        }
+        .summary-note {
+            margin: 14px 0 0;
+            padding-top: 12px;
+            border-top: 1px solid #f0f0f0;
+            font-size: 0.88rem;
+            font-weight: 800;
+            color: #28a745;
+            text-align: center;
+            line-height: 1.55;
+        }
+        .summary-label { color: #666; }
+        .summary-value { color: #111; font-weight: 900; text-align: left; word-break: break-word; }
+
+        .next-steps {
+            background: var(--soft-blue);
+            border: 1px solid rgba(32,40,149,0.12);
+            border-radius: 14px;
+            padding: 16px 18px;
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #333;
+            line-height: 1.75;
+            margin-bottom: 24px;
+            text-align: right;
+        }
+        .next-steps b { color: var(--accent-blue); }
+
+        .btn-row {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 420px;
+            margin: 0 auto;
+        }
+        .btn-prm {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.05rem;
+            padding: 16px 14px;
+            border-radius: 12px;
+            transition: filter 0.15s ease, transform 0.12s ease;
+        }
+        .btn-prm:hover { filter: brightness(1.05); }
+        .btn-prm:active { transform: scale(0.98); }
+        .btn-prm--green {
+            background: var(--success-green);
+            color: #fff;
+            box-shadow: 0 5px 0 #1e7e34;
+        }
+        .btn-prm--blue {
+            background: var(--accent-blue);
+            color: #fff;
+            box-shadow: 0 5px 0 #151a5e;
+        }
+        .btn-prm--ghost {
+            background: #fff;
+            color: #333;
+            border: 2px solid #ddd;
+            box-shadow: none;
+        }
+
+        .mini-nav {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px dashed rgba(32,40,149,0.2);
+        }
+        .mini-nav p {
+            font-size: 0.88rem;
+            font-weight: 800;
+            color: #555;
+            margin-bottom: 12px;
+        }
+        .mini-nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .mini-nav-links a {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            text-decoration: none;
+            padding: 8px 14px;
+            background: #fff;
+            border-radius: 999px;
+            border: 1px solid rgba(32,40,149,0.2);
+        }
+        .mini-nav-links a:hover { background: var(--soft-blue); }
+
+        footer {
+            background: var(--primary-white);
+            padding: 36px 0 22px;
+            border-top: 1px solid #eee;
+        }
+        .footer-logo { max-width: 140px; margin: 0 auto 20px; display: block; }
+        .trust-badges {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 14px;
+            max-width: 800px;
+            margin: 0 auto 22px;
+            text-align: center;
+        }
+        .badge-item { font-size: 0.85rem; font-weight: 900; color: var(--text-gray); }
+        .badge-icon { font-size: 1.6rem; display: block; margin-bottom: 6px; }
+        .copyright { text-align: center; font-size: 0.82rem; color: #aaa; padding-top: 16px; border-top: 1px solid #f5f5f5; }
+
+        .whatsapp-float {
+            position: fixed;
+            left: 18px;
+            bottom: 22px;
+            z-index: 2000;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+        }
+        .whatsapp-float img { width: 100%; height: 100%; display: block; }
+
+        @media (max-width: 480px) {
+            .contact-quick-inner { grid-template-columns: 1fr; }
+            .trust-badges { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body class="thank-you-page">
+
+    <div class="top-bar">
+        <span class="pulse-dot"></span>
+        توصيل مجاني لجميع أنحاء المغرب <strong>+ الدفع عند الاستلام</strong>
+    </div>
+
+    <header>
+        <div class="header-inner">
+            <div class="logo-container">
+                <a href="/" aria-label="Prumysl — الصفحة الرئيسية">
+                    <img src="/img/brand/logo.svg" alt="Prumysl" width="140" height="46">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="contact-quick-row" role="region" aria-label="تواصل سريع">
+        <div class="contact-quick-inner">
+            <a class="contact-quick-btn contact-quick-btn--call" href="tel:+212723496854" dir="ltr">اتصل بنا</a>
+            <a class="contact-quick-btn contact-quick-btn--wa" id="waQuickStrip" href="https://api.whatsapp.com/send?phone=212723496854&amp;text=" target="_blank" rel="noopener noreferrer">تواصل معنا على واتساب</a>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <section class="thank-wrap">
+            <div class="container">
+                <div class="thank-icon" aria-hidden="true">✓</div>
+                <h1>شكراً <span id="thankNameGreet">زبوننا الكريم</span>!</h1>
+                <p class="thank-lead">
+                    تم <b>استلام طلبك</b> بنجاح. فريقنا غادي يتصل بيك في أقرب وقت باش <b>يأكد الطلب</b> ويوضح ليك خطوات التوصيل — <b>الدفع عند الاستلام</b> والتوصيل مجاني لجميع أنحاء المغرب 🇲🇦
+                </p>
+
+                <div class="summary-card" id="orderSummary" hidden>
+                    <h2>ملخص طلبك</h2>
+                    <div class="summary-row summary-row--product">
+                        <span class="summary-label">المنتج</span>
+                        <span class="summary-value" id="sumModel">—</span>
+                    </div>
+                    <div class="summary-row summary-row--price">
+                        <span class="summary-label">المجموع</span>
+                        <span class="summary-value summary-value--price" id="sumPrice">—</span>
+                    </div>
+                    <hr class="summary-divider">
+                    <div class="summary-row"><span class="summary-label">الاسم</span><span class="summary-value" id="sumName">—</span></div>
+                    <div class="summary-row"><span class="summary-label">المدينة</span><span class="summary-value" id="sumCity">—</span></div>
+                    <div class="summary-row"><span class="summary-label">الهاتف</span><span class="summary-value" id="sumPhone" dir="ltr">—</span></div>
+                    <p class="summary-note">الدفع عند الاستلام · توصيل مجاني لجميع أنحاء المغرب 🇲🇦</p>
+                </div>
+
+                <div class="next-steps">
+                    <b>وشنو دابا؟</b> خلّي الهاتف قريب منك — غادي نتواصلو معاك باش نأكدو المدينة والعنوان والتوقيت المناسب. إلا عندك سؤال عاجل، لقاتنا مباشرة عبر واتساب من الزر اللي لتحت.
+                </div>
+
+                <div class="btn-row">
+                    <a class="btn-prm btn-prm--green" href="https://prumysl.cc/">العودة إلى المتجر — Prumysl</a>
+                    <a class="btn-prm btn-prm--blue" id="waPrimaryBtn" href="https://api.whatsapp.com/send?phone=212723496854&amp;text=" target="_blank" rel="noopener noreferrer">متابعة عبر واتساب</a>
+                    <a class="btn-prm btn-prm--ghost" href="/">اختيار الكاميرا (موكا، برو ماكس، العساس، غارد كور، الصقر)</a>
+                </div>
+
+                <div class="mini-nav">
+                    <p>صفحات منتجاتنا</p>
+                    <div class="mini-nav-links">
+                        <a href="/moka-lineup/">موكا أو برو ماكس؟</a>
+                        <a href="/moka/">كاميرا موكا</a>
+                        <a href="/moka-pro-max/">موكا برو ماكس</a>
+                        <a href="/saqr/">كاميرا الصقر</a>
+                        <a href="/assas/">كاميرا العساس</a>
+                        <a href="/garde-corps/">كاميرا غارد كور</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container" style="max-width:1100px;margin:0 auto;padding:0 15px;">
+            <a href="/" aria-label="الصفحة الرئيسية — Prumysl" style="display:block;max-width:140px;margin:0 auto 20px;text-decoration:none;">
+                <img src="/img/brand/logo.svg" alt="Prumysl" class="footer-logo" width="140" height="46" style="margin:0;display:block;">
+            </a>
+            <div class="trust-badges">
+                <div class="badge-item"><span class="badge-icon">🚚</span>توصيل مجاني</div>
+                <div class="badge-item"><span class="badge-icon">🤝</span>الدفع عند الاستلام</div>
+                <div class="badge-item"><span class="badge-icon">🛡️</span>ضمان الجودة</div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Prumysl. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a class="whatsapp-float" id="waFloat" href="https://api.whatsapp.com/send?phone=212723496854&amp;text=" target="_blank" rel="noopener noreferrer" aria-label="واتساب" title="واتساب"><img src="/img/brand/whatsapp.png" alt="WhatsApp" width="56" height="56"></a>
+
+    <script>
+    (function () {
+        function decodeParam(v) {
+            if (v == null || v === '') return '';
+            try { return decodeURIComponent(v.replace(/\+/g, ' ')).trim(); } catch (e) { return String(v).trim(); }
+        }
+        function safeText(raw, max) {
+            var t = decodeParam(raw);
+            if (!t) return '';
+            return t.replace(/[\u0000-\u001F<>]/g, '').slice(0, max || 200);
+        }
+        function formatPrice(raw) {
+            var n = parseFloat(String(raw || '').replace(',', '.'));
+            if (isNaN(n)) return '';
+            return n.toLocaleString('ar-MA') + ' درهم';
+        }
+        function displayValue(raw) {
+            var t = safeText(raw, 200);
+            return t || '—';
+        }
+        function waMessage(data) {
+            var lines = ['سلام، تأكيد الطلب — Prumysl'];
+            if (data.model) lines.push('المنتج: ' + data.model);
+            if (data.price) lines.push('المجموع: ' + data.price);
+            if (data.name) lines.push('الاسم: ' + data.name);
+            if (data.city) lines.push('المدينة: ' + data.city);
+            if (data.phone) lines.push('الهاتف: ' + data.phone);
+            return lines.join('\n');
+        }
+
+        var params = new URLSearchParams(window.location.search);
+        var name = safeText(params.get('name'), 120);
+        var city = safeText(params.get('city'), 80);
+        var phone = safeText(params.get('phone'), 20);
+        var model = safeText(params.get('model'), 200);
+        var price = formatPrice(params.get('price'));
+
+        var greet = document.getElementById('thankNameGreet');
+        if (greet) greet.textContent = name || 'زبوننا الكريم';
+
+        var hasSummary = !!(name || city || phone || model || price);
+        if (hasSummary) {
+            var card = document.getElementById('orderSummary');
+            if (card) card.removeAttribute('hidden');
+            var elModel = document.getElementById('sumModel');
+            var elPrice = document.getElementById('sumPrice');
+            var elName = document.getElementById('sumName');
+            var elCity = document.getElementById('sumCity');
+            var elPhone = document.getElementById('sumPhone');
+            if (elModel) elModel.textContent = displayValue(model);
+            if (elPrice) elPrice.textContent = price || '—';
+            if (elName) elName.textContent = displayValue(name);
+            if (elCity) elCity.textContent = displayValue(city);
+            if (elPhone) elPhone.textContent = displayValue(phone);
+        }
+
+        var waUrl = 'https://api.whatsapp.com/send?phone=212723496854&text=' + encodeURIComponent(waMessage({
+            name: name,
+            city: city,
+            phone: phone,
+            model: model,
+            price: price
+        }));
+        [document.getElementById('waQuickStrip'), document.getElementById('waPrimaryBtn'), document.getElementById('waFloat')].forEach(function (el) {
+            if (el) el.href = waUrl;
+        });
+    })();
+    </script>
+    <script src="/js/prumysl-meta-pixel.js"></script>
+    <script>prumyslMetaPixelInitThankYouPage();</script>
+</body>
+</html>

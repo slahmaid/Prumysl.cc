@@ -1,0 +1,52 @@
+/* Prumysl — shared styles (whatsapp, lazy gallery, product pages) */
+
+.whatsapp-float {
+    position: fixed;
+    left: 18px;
+    bottom: 22px;
+    z-index: 2000;
+    width: 56px;
+    height: 56px;
+    background: transparent;
+    text-decoration: none;
+    border: none;
+    box-shadow: none;
+    transition: transform 0.2s ease;
+}
+.whatsapp-float:hover {
+    transform: translateY(-2px);
+}
+.whatsapp-float img {
+    width: 56px;
+    height: 56px;
+    display: block;
+    object-fit: contain;
+}
+
+@media (max-width: 480px) {
+    .moka-pro-max-page .whatsapp-float,
+    .moka-page .whatsapp-float,
+    .moka-lineup-page .whatsapp-float,
+    .homepage-page .whatsapp-float,
+    .assas-page .whatsapp-float,
+    .garde-corps-page .whatsapp-float,
+    .saqr-page .whatsapp-float {
+        bottom: 90px;
+    }
+}
+
+/* Gallery: show images even without lazy-load JS */
+.gallery-section img[loading="lazy"],
+.gallery-item img[loading="lazy"] {
+    opacity: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    html {
+        scroll-padding-top: 80px;
+    }
+}
