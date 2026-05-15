@@ -16,8 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/desktop.css">
+    <script src="js/site-base-head.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/desktop.css">
 
     <meta property="og:title" content="الصفحة الرئيسية | اختر كاميرتك — موكا، برو ماكس، العساس، غارد كور، الصقر — Prumysl">
     <meta property="og:description" content="صفحة اختيار بين كاميرا موكا، موكا برو ماكس، العساس، غارد كور، والصقر — مواصفات وأسعار مختلفة حسب احتياجك.">
@@ -263,7 +264,7 @@
             gap: 22px;
             align-items: stretch;
         }
-        .choice-card {
+        a.choice-card {
             background: var(--primary-white);
             border: 2px solid #e6e6e6;
             border-radius: 20px;
@@ -272,8 +273,10 @@
             flex-direction: column;
             box-shadow: 0 10px 28px rgba(0,0,0,0.06);
             transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            color: inherit;
         }
-        .choice-card:hover {
+        a.choice-card:hover {
             border-color: var(--accent-blue);
             transform: translateY(-3px);
             box-shadow: 0 16px 36px rgba(32,40,149,0.12);
@@ -337,7 +340,8 @@
             font-weight: 900;
             margin-left: 8px;
         }
-        .choice-cta {
+        .choice-cta,
+        a.choice-card .choice-cta {
             display: block;
             width: 100%;
             text-align: center;
@@ -440,7 +444,7 @@
         <div class="header-inner">
             <div class="logo-container">
                 <a href="/" aria-label="Prumysl — الصفحة الرئيسية">
-                    <img src="/img/brand/logo.svg" alt="Prumysl" width="140" height="46">
+                    <img src="img/brand/logo.svg" alt="Prumysl" width="140" height="46">
                 </a>
             </div>
         </div>
@@ -463,25 +467,25 @@
                 <div class="trust-strip" role="region" aria-label="مميزات التسوق مع Prumysl">
                     <figure class="trust-block">
                         <div class="trust-block__media">
-                            <img src="/img/trust/delivery.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
+                            <img src="img/trust/delivery.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
                         </div>
                         <figcaption class="trust-block__caption">توصيل لجميع المدن 🇲🇦</figcaption>
                     </figure>
                     <figure class="trust-block">
                         <div class="trust-block__media">
-                            <img src="/img/trust/quality.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
+                            <img src="img/trust/quality.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
                         </div>
                         <figcaption class="trust-block__caption">جودة عالية</figcaption>
                     </figure>
                     <figure class="trust-block">
                         <div class="trust-block__media">
-                            <img src="/img/trust/warranty.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
+                            <img src="img/trust/warranty.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
                         </div>
                         <figcaption class="trust-block__caption">ضمان سنة واحدة</figcaption>
                     </figure>
                 </div>
                 <p style="margin-top:18px;font-size:0.92rem;font-weight:800;text-align:center;">
-                    <a href="/moka-lineup/" style="color:#202895;text-decoration:underline;text-underline-offset:3px;">موكا ولا موكا برو ماكس؟ — قارن بين الاثنين ←</a>
+                    <a href="moka-lineup/" style="color:#202895;text-decoration:underline;text-underline-offset:3px;">موكا ولا موكا برو ماكس؟ — قارن بين الاثنين ←</a>
                 </p>
             </div>
         </section>
@@ -489,10 +493,10 @@
         <section class="choice-section">
             <div class="container">
                 <div class="choice-grid">
-                    <article class="choice-card">
+                    <a class="choice-card" href="moka/">
                         <span class="choice-badge">تخفيض</span>
                         <div class="choice-thumb">
-                            <img src="/img/products/moka/card.jpeg" alt="كاميرا موكا — عدستان" width="640" height="400" loading="lazy" decoding="async">
+                            <img src="img/products/moka/card.jpeg" alt="كاميرا موكا — عدستان" width="640" height="400" loading="lazy" decoding="async">
                         </div>
                         <div class="choice-body">
                             <h2 class="choice-title">كاميرا موكا الذكية</h2>
@@ -503,14 +507,14 @@
                                 <li>PIR وكشف إنسان — منخفضة الاستهلاك</li>
                                 <li>رؤية ليلية IR-Cut — IP66</li>
                             </ul>
-                            <a class="choice-cta" href="/moka/">اذهب إلى صفحة موكا ←</a>
+                            <span class="choice-cta">اذهب إلى صفحة موكا ←</span>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="choice-card choice-card--featured">
+                    <a class="choice-card choice-card--featured" href="moka-pro-max/">
                         <span class="choice-badge">تخفيض</span>
                         <div class="choice-thumb">
-                            <img src="/img/products/moka-pro-max/card.jpeg" alt="كاميرا موكا برو ماكس — ثلاث عدسات" width="640" height="400" loading="lazy" decoding="async">
+                            <img src="img/products/moka-pro-max/card.jpeg" alt="كاميرا موكا برو ماكس — ثلاث عدسات" width="640" height="400" loading="lazy" decoding="async">
                         </div>
                         <div class="choice-body">
                             <h2 class="choice-title">كاميرا موكا برو ماكس</h2>
@@ -521,14 +525,14 @@
                                 <li>رؤية ليلية ملونة</li>
                                 <li>مراقبة خارجية احترافية للفيلا والضيعة</li>
                             </ul>
-                            <a class="choice-cta choice-cta--secondary" href="/moka-pro-max/">اذهب إلى صفحة موكا برو ماكس ←</a>
+                            <span class="choice-cta choice-cta--secondary">اذهب إلى صفحة موكا برو ماكس ←</span>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="choice-card">
+                    <a class="choice-card" href="saqr/">
                         <span class="choice-badge">تخفيض</span>
                         <div class="choice-thumb">
-                            <img src="/img/products/saqr/card.jpeg" alt="كاميرا الصقر — زووم بصري 36×" width="640" height="400" loading="lazy" decoding="async">
+                            <img src="img/products/saqr/card.jpeg" alt="كاميرا الصقر — زووم بصري 36×" width="640" height="400" loading="lazy" decoding="async">
                         </div>
                         <div class="choice-body">
                             <h2 class="choice-title">كاميرا الصقر</h2>
@@ -539,14 +543,14 @@
                                 <li>رؤية ليلية بالليزر — تتبع بشري بالذكاء الاصطناعي</li>
                                 <li>4G فقط (بدون Wi‑Fi) — IP66</li>
                             </ul>
-                            <a class="choice-cta choice-cta--premium" href="/saqr/">اذهب إلى صفحة كاميرا الصقر ←</a>
+                            <span class="choice-cta choice-cta--premium">اذهب إلى صفحة كاميرا الصقر ←</span>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="choice-card">
+                    <a class="choice-card" href="assas/">
                         <span class="choice-badge">تخفيض</span>
                         <div class="choice-thumb">
-                            <img src="/img/products/assas/card.jpeg" alt="كاميرا العساس — ثلاث عدسات وV380 Pro" width="640" height="400" loading="lazy" decoding="async">
+                            <img src="img/products/assas/card.jpeg" alt="كاميرا العساس — ثلاث عدسات وV380 Pro" width="640" height="400" loading="lazy" decoding="async">
                         </div>
                         <div class="choice-body">
                             <h2 class="choice-title">كاميرا العساس</h2>
@@ -557,14 +561,14 @@
                                 <li>طاقة شمسية 16W وبطارية 8000mAh</li>
                                 <li>رؤية ليلية ملونة + IR — IP66</li>
                             </ul>
-                            <a class="choice-cta choice-cta--terracotta" href="/assas/">اذهب إلى صفحة كاميرا العساس ←</a>
+                            <span class="choice-cta choice-cta--terracotta">اذهب إلى صفحة كاميرا العساس ←</span>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="choice-card">
+                    <a class="choice-card" href="garde-corps/">
                         <span class="choice-badge">تخفيض</span>
                         <div class="choice-thumb">
-                            <img src="/img/products/garde-corps/card.jpeg" alt="كاميرا غارد كور — تحكم مستقل في كل عدسة" width="640" height="400" loading="lazy" decoding="async">
+                            <img src="img/products/garde-corps/card.jpeg" alt="كاميرا غارد كور — تحكم مستقل في كل عدسة" width="640" height="400" loading="lazy" decoding="async">
                         </div>
                         <div class="choice-body">
                             <h2 class="choice-title">كاميرا غارد كور</h2>
@@ -575,9 +579,9 @@
                                 <li>طاقة شمسية 16W وبطارية 8000mAh</li>
                                 <li>رؤية ليلية ذكية — IP66</li>
                             </ul>
-                            <a class="choice-cta choice-cta--violet" href="/garde-corps/">اذهب إلى صفحة غارد كور ←</a>
+                            <span class="choice-cta choice-cta--violet">اذهب إلى صفحة غارد كور ←</span>
                         </div>
-                    </article>
+                    </a>
                 </div>
 
                 <p class="compare-note">
@@ -608,24 +612,24 @@
     <footer>
         <div class="container">
             <a href="/" aria-label="الصفحة الرئيسية — Prumysl" style="display:block;max-width:140px;margin:0 auto 22px;text-decoration:none;">
-                <img src="/img/brand/logo.svg" alt="Prumysl" class="footer-logo" width="140" height="46" style="margin:0;display:block;">
+                <img src="img/brand/logo.svg" alt="Prumysl" class="footer-logo" width="140" height="46" style="margin:0;display:block;">
             </a>
             <div class="trust-badges" role="region" aria-label="مميزات Prumysl">
                 <figure class="trust-block">
                     <div class="trust-block__media">
-                        <img src="/img/trust/delivery.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
+                        <img src="img/trust/delivery.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
                     </div>
                     <figcaption class="trust-block__caption">توصيل لجميع المدن 🇲🇦</figcaption>
                 </figure>
                 <figure class="trust-block">
                     <div class="trust-block__media">
-                        <img src="/img/trust/quality.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
+                        <img src="img/trust/quality.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
                     </div>
                     <figcaption class="trust-block__caption">جودة عالية</figcaption>
                 </figure>
                 <figure class="trust-block">
                     <div class="trust-block__media">
-                        <img src="/img/trust/warranty.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
+                        <img src="img/trust/warranty.webp" alt="" width="112" height="112" loading="lazy" decoding="async">
                     </div>
                     <figcaption class="trust-block__caption">ضمان سنة واحدة</figcaption>
                 </figure>
@@ -640,8 +644,9 @@
         href="https://api.whatsapp.com/send?phone=212723496854&amp;text=%D8%B3%D9%84%D8%A7%D9%85%D8%8C%20%D8%A8%D8%BA%D9%8A%D8%AA%20%D9%86%D8%B4%D8%B1%D9%8A%20%D9%83%D8%A7%D9%85%D9%8A%D8%B1%D8%A7%20%D9%85%D9%86%20Prumysl%20(%D9%85%D9%88%D9%83%D8%A7%D8%8C%20%D9%85%D9%88%D9%83%D8%A7%20%D8%A8%D8%B1%D9%88%20%D9%85%D8%A7%D9%83%D8%B3%D8%8C%20%D8%A7%D9%84%D8%B9%D8%B3%D8%A7%D8%B3%D8%8C%20%D8%BA%D8%A7%D8%B1%D8%AF%20%D9%83%D9%88%D8%B1%D8%8C%20%D8%A7%D9%84%D8%B5%D9%82%D8%B1)"
         target="_blank" rel="noopener noreferrer"
         aria-label="تواصل عبر واتساب"
-        title="واتساب"><img src="/img/brand/whatsapp.png" alt="WhatsApp" width="56" height="56"></a>
-    <script src="/js/prumysl-meta-pixel.js"></script>
+        title="واتساب"><img src="img/brand/whatsapp.png" alt="WhatsApp" width="56" height="56"></a>
+    <script src="js/site-base.js"></script>
+    <script src="js/prumysl-meta-pixel.js"></script>
     <script>prumyslMetaPixelInitLandingPage();</script>
 </body>
 </html>
