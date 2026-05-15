@@ -1026,7 +1026,7 @@
 
     <main id="main-content">
     <section class="hero-section">
-        <a href="#main-order-form" aria-label="الانتقال إلى نموذج الطلب">
+        <a href="javascript:void(0)" data-scroll-to-order aria-label="الانتقال إلى نموذج الطلب">
             <picture>
                 <source media="(max-width: 767px)" srcset="/img/products/garde-corps/hero-mobile.jpeg">
                 <img src="/img/products/garde-corps/hero.jpeg" alt="كاميرا غارد كور الشمسية من Prumysl — 4G، 3× PTZ، 15MP، H.265 — المغرب" width="900" height="600" fetchpriority="high" decoding="async">
@@ -1132,7 +1132,7 @@
                 </table>
             </div>
             <div class="features-cta-wrap">
-                <a href="#main-order-form" class="submit-btn features-cta-btn">تأكيد الطلب الآن ✅ — الدفع عند الاستلام</a>
+                <button type="button" class="submit-btn features-cta-btn" data-scroll-to-order>تأكيد الطلب الآن ✅ — الدفع عند الاستلام</button>
             </div>
         </div>
     </section>
@@ -1201,7 +1201,7 @@
                 <div class="gallery-item"><img src="/img/products/garde-corps/gallery/03.jpg" alt="تطبيق V380 Pro — عرض ثلاثي للشاشات" loading="lazy" width="400" height="400"></div>
             </div>
             <div class="features-cta-wrap">
-                <a href="#main-order-form" class="submit-btn features-cta-btn">تأكيد الطلب الآن ✅ — الدفع عند الاستلام</a>
+                <button type="button" class="submit-btn features-cta-btn" data-scroll-to-order>تأكيد الطلب الآن ✅ — الدفع عند الاستلام</button>
             </div>
         </div>
     </section>
@@ -1354,8 +1354,8 @@
         </div>
     </div>
 
-    <script src="/js/prumysl-orders.js"></script>
-    <script src="/js/prumysl-scroll-to-order.js"></script>
+    <script src="../js/prumysl-orders.js"></script>
+    <script src="../js/prumysl-scroll-to-order.js"></script>
     <script>
         // CONFIG
         const SCRIPT_URL = prumyslOrdersScriptUrl();

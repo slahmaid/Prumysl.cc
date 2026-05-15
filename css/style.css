@@ -29,6 +29,12 @@
     justify-content: center;
     gap: 8px;
 }
+button.features-cta-btn {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
 .contact-quick-btn--wa::before {
     content: "";
     flex-shrink: 0;

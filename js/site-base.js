@@ -22,6 +22,15 @@
         el.setAttribute(attr, prefix + val);
       });
     });
+
+    if (typeof window.prumyslFixOrderHashLinks === 'function') {
+      window.prumyslFixOrderHashLinks();
+    } else {
+      var path = location.pathname + location.search;
+      document.querySelectorAll('a[href="#order"], a[href="#main-order-form"]').forEach(function (el) {
+        el.setAttribute('href', path + el.getAttribute('href'));
+      });
+    }
   }
 
   if (document.readyState === 'loading') {
