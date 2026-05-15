@@ -23,6 +23,20 @@
     object-fit: contain;
 }
 
+.contact-quick-btn--wa {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.contact-quick-btn--wa::before {
+    content: "";
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    background: url(../img/brand/whatsapp.png) center / contain no-repeat;
+}
+
 @media (max-width: 480px) {
     .moka-pro-max-page .whatsapp-float,
     .moka-page .whatsapp-float,
