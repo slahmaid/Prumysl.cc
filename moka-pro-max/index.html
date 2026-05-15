@@ -958,7 +958,7 @@
 
     <main id="main-content">
     <section class="hero-section">
-        <a href="#order" aria-label="الانتقال إلى نموذج الطلب">
+        <a href="#main-order-form" aria-label="الانتقال إلى نموذج الطلب">
             <picture>
                 <source media="(max-width: 767px)" srcset="/img/products/moka-pro-max/hero-mobile.jpeg">
                 <img src="/img/products/moka-pro-max/hero.jpeg" alt="كاميرا Prumysl Moka Pro Max الشمسية بثلاث عدسات وزووم 10X — المغرب" width="900" height="600" fetchpriority="high" decoding="async">
@@ -1045,7 +1045,7 @@
                 </div>
             </div>
             <div class="features-cta-wrap">
-                <a href="#order" class="submit-btn features-cta-btn">تأكيد الطلب الآن ✅ — الدفع عند الاستلام</a>
+                <a href="#main-order-form" class="submit-btn features-cta-btn">تأكيد الطلب الآن ✅ — الدفع عند الاستلام</a>
             </div>
         </div>
     </section>
@@ -1103,7 +1103,7 @@
                 <div class="gallery-item"><img src="/img/products/moka-pro-max/gallery/03.jpg" alt="تطبيق المراقبة على الهاتف — Moka Pro Max" loading="lazy" width="400" height="400"></div>
             </div>
             <div class="features-cta-wrap">
-                <a href="#order" class="submit-btn features-cta-btn">تأكيد الطلب الآن ✅ — الدفع عند الاستلام</a>
+                <a href="#main-order-form" class="submit-btn features-cta-btn">تأكيد الطلب الآن ✅ — الدفع عند الاستلام</a>
             </div>
         </div>
     </section>
@@ -1259,6 +1259,7 @@
     </div>
 
     <script src="/js/prumysl-orders.js"></script>
+    <script src="/js/prumysl-scroll-to-order.js"></script>
     <script>
         // CONFIG
         const SCRIPT_URL = prumyslOrdersScriptUrl();
@@ -1327,22 +1328,17 @@
             setInterval(tick, 1000);
         })();
 
-        // Sticky Mobile CTA Scroll behavior
+        // Sticky Mobile CTA visibility (scroll handled by prumysl-scroll-to-order.js)
         (function(){
             const cta = document.getElementById('mobileCta');
-            const btn = document.getElementById('goToOrder');
-            const order = document.getElementById('order');
-            if(!cta || !btn || !order) return;
+            const orderForm = document.getElementById('main-order-form');
+            if(!cta || !orderForm) return;
 
             const isSmall = () => window.matchMedia('(max-width: 480px)').matches;
 
-            btn.addEventListener('click', () => {
-                order.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            });
-
             window.addEventListener('scroll', () => {
                 if(!isSmall()) { cta.style.display = 'none'; return; }
-                const rect = order.getBoundingClientRect();
+                const rect = orderForm.getBoundingClientRect();
                 const inView = rect.top < window.innerHeight && rect.bottom > 0;
                 cta.style.display = inView ? 'none' : 'block';
             });

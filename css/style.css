@@ -59,6 +59,10 @@ html {
     scroll-behavior: smooth;
 }
 
+#main-order-form {
+    scroll-margin-top: 96px;
+}
+
 @media (max-width: 768px) {
     html {
         scroll-padding-top: 80px;
